@@ -1,0 +1,44 @@
+2. Project set tuned to these skills (ordered by hiring impact)
+Project 1: LLM RAG & Agent Platform (Core AI Engineer Signal)
+
+Skills hit: LLMs, RAG, embeddings, tools, monitoring, prompt design, latency optimization.
+
+What it is
+A platform where you can plug in different document sources (PDFs, websites, APIs), index them into a vector store, then expose:
+
+A RAG chat endpoint (answer from your data, with citations)
+
+A tool-using agent that can call:
+
+web search
+
+calculator
+
+database query
+
+internal APIs
+
+Key components
+
+Ingestion workers: chunking, embedding, upserts to vector DB
+
+Retrieval: hybrid search (BM25 + embeddings)
+
+RAG pipeline: retrieve → re-rank → build context → call LLM
+
+Agents: planning + tool calling with explicit JSON schemas
+
+Observability:
+
+log prompts/outputs
+
+track latency, cost, hallucination flags
+
+A/B testing:
+
+route traffic between models or retrieval configs
+
+compare answer quality and latency
+
+Why it maps well to LinkedIn demand
+Companies need devs who can safely productionize LLMs, not just call an API. This is exactly what current AI Engineer job posts are asking for.

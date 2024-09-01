@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG + Agent Console</title>
+  <style>
+    :root { font-family: "Segoe UI", sans-serif; color: #0f172a; background: #0b1021; }
+    body { margin: 0; padding: 0; background: radial-gradient(circle at 20% 20%, #101932 0%, #0b1021 45%, #0b0f1d 100%); min-height: 100vh; color: #e2e8f0; }
+    .shell { max-width: 1100px; margin: 32px auto 64px; padding: 0 20px; }
+    .panel { background: rgba(17, 24, 39, 0.85); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 16px; box-shadow: 0 12px 40px rgba(0,0,0,0.35); margin-bottom: 16px; }
+    h1 { font-size: 24px; margin: 0 0 8px; letter-spacing: 0.5px; }
+    h2 { font-size: 16px; margin: 0 0 10px; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.5px; }
+    label { display: block; margin-bottom: 6px; font-size: 13px; color: #cbd5e1; }
+    input, textarea, select { width: 100%; background: #0f172a; color: #e2e8f0; border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px; font-size: 14px; }
+    textarea { min-height: 120px; resize: vertical; }
+    button { background: linear-gradient(135deg, #6366f1, #22d3ee); color: #0b1021; border: none; padding: 10px 14px; border-radius: 10px; font-weight: 600; cursor: pointer; transition: transform 0.08s ease; }
+    button:hover { transform: translateY(-1px); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+    pre { background: #0f172a; color: #c7d2fe; border-radius: 10px; padding: 12px; white-space: pre-wrap; word-break: break-word; border: 1px solid rgba(255,255,255,0.05); }
+    .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .pill { padding: 6px 10px; background: rgba(255,255,255,0.08); border-radius: 999px; font-size: 12px; }
+    a { color: #38bdf8; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="panel">
+      <h1>RAG + Agent Console</h1>
+      <div class="row">
+        <span class="pill">chat model: openai/gpt-4.1</span>
+        <span class="pill" id="health-pill">checking health...</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h2>Ingest</h2>
+        <label for="ingest-text">Text</label>
+        <textarea id="ingest-text" placeholder="Paste text to ingest"></textarea>
+        <label for="ingest-metadata">Metadata (JSON optional)</label>
+        <input id="ingest-metadata" placeholder='{"category":"notes"}' />
+        <button onclick="ingest()">Ingest</button>
+        <pre id="ingest-result"></pre>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 14px 0;">
+        <h3 style="margin: 0 0 8px;">Ingest URL</h3>
+        <label for="ingest-url">URL</label>
+        <input id="ingest-url" placeholder="https://example.com/page" />
+        <label for="ingest-url-metadata">Metadata (JSON optional)</label>
+        <input id="ingest-url-metadata" placeholder='{"category":"web"}' />
+        <button onclick="ingestUrl()">Fetch & Ingest URL</button>
+        <pre id="ingest-url-result"></pre>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 14px 0;">
+        <h3 style="margin: 0 0 8px;">Upload PDF / Text File</h3>
+        <label for="upload-file">Choose file</label>
+        <input id="upload-file" type="file" accept=".pdf,.txt,.md,.csv,.tsv,.json,.xml,.html" />
+        <div style="font-size:12px;color:#94a3b8;margin:6px 0;">Source type auto-detected from file extension (use CSV/TSV for sheets; other text-like formats allowed).</div>
+        <label for="upload-metadata">Metadata (JSON optional)</label>
+        <input id="upload-metadata" placeholder='{"category":"reports"}' />
+        <button onclick="uploadDoc()">Upload & Ingest</button>
+        <pre id="upload-result"></pre>
+      </div>
+
+      <div class="panel">
+        <h2>Chat (RAG)</h2>
+        <label for="chat-query">Question</label>
+        <textarea id="chat-query" placeholder="Ask about your data"></textarea>
+        <label for="chat-profile">A/B Profile</label>
+        <select id="chat-profile">
+          <option value="">(auto)</option>
+          <option value="control">control</option>
+          <option value="fast">fast</option>
+          <option value="quality">quality</option>
+        </select>
+        <button onclick="chat()">Chat</button>
+        <div style="margin-top:10px;">
+          <div style="font-size:12px;color:#94a3b8;margin:4px 0;">Answer</div>
+          <pre id="chat-answer"></pre>
+          <div style="font-size:12px;color:#94a3b8;margin:4px 0;">Metrics</div>
+          <pre id="chat-metrics"></pre>
+          <div style="font-size:12px;color:#94a3b8;margin:4px 0;">Citations</div>
+          <pre id="chat-citations"></pre>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Agent</h2>
+        <label for="agent-query">Task</label>
+        <textarea id="agent-query" placeholder="Ask a question or request a tool call"></textarea>
+        <label for="agent-tools">Allowed tools (comma-separated)</label>
+        <input id="agent-tools" placeholder="web_search,calculator" />
+        <label for="free-sites">Free to access sites</label>
+        <select id="free-sites">
+          <option value="">(choose a site)</option>
+          <optgroup label="Open-content">
+            <option>wikipedia.org</option>
+            <option>wiktionary.org</option>
+            <option>wikibooks.org</option>
+            <option>wikisource.org</option>
+            <option>openlibrary.org</option>
+            <option>projectgutenberg.org</option>
+            <option>arxiv.org</option>
+          </optgroup>
+          <optgroup label="Public docs">
+            <option>docs.python.org</option>
+            <option>developer.mozilla.org</option>
+            <option>pypi.org</option>
+            <option>readthedocs.io</option>
+            <option>golang.org</option>
+            <option>kubernetes.io</option>
+            <option>docker.com/docs</option>
+          </optgroup>
+          <optgroup label="Test/demo">
+            <option>httpbin.org</option>
+            <option>jsonplaceholder.typicode.com</option>
+            <option>example.com</option>
+            <option>example.org</option>
+            <option>example.net</option>
+          </optgroup>
+          <optgroup label="Open data">
+            <option>data.gov</option>
+            <option>data.gov.uk</option>
+            <option>opendata.europa.eu</option>
+            <option>datahub.io</option>
+          </optgroup>
+          <optgroup label="Open APIs">
+            <option>api.github.com</option>
+            <option>hacker-news.firebaseio.com</option>
+          </optgroup>
+        </select>
+        <div style="font-size:12px;color:#94a3b8;margin:6px 0;">Select a domain to copy into your query or allowed tools.</div>
+        <label for="agent-profile">A/B Profile</label>
+        <select id="agent-profile">
+          <option value="">(auto)</option>
+          <option value="control">control</option>
+          <option value="fast">fast</option>
+          <option value="quality">quality</option>
+        </select>
+        <button onclick="agent()">Run Agent</button>
+        <div style="margin-top:10px;">
+          <div style="font-size:12px;color:#94a3b8;margin:4px 0;">Answer</div>
+          <pre id="agent-answer"></pre>
+          <div style="font-size:12px;color:#94a3b8;margin:4px 0;">Metrics</div>
+          <pre id="agent-metrics"></pre>
+          <div style="font-size:12px;color:#94a3b8;margin:4px 0;">Tool Calls</div>
+          <pre id="agent-tools"></pre>
+          <div style="font-size:12px;color:#94a3b8;margin:4px 0;">Citations</div>
+          <pre id="agent-citations"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const base = "";
+
+    async function health() {
+      try {
+        const res = await fetch(`${base}/health`);
+        const json = await res.json();
+        document.getElementById("health-pill").textContent = `ok · docs: ${json.documents}`;
+      } catch (e) {
+        document.getElementById("health-pill").textContent = "health check failed";
+      }
+    }
+
+    function parseMetadata(raw) {
+      if (!raw.trim()) return {};
+      try { return JSON.parse(raw); } catch (_) { return {}; }
+    }
+
+    async function ingest() {
+      const text = document.getElementById("ingest-text").value;
+      const metadata = parseMetadata(document.getElementById("ingest-metadata").value);
+      const body = { source_type: "text", content: text, metadata };
+      const out = document.getElementById("ingest-result");
+      out.textContent = "Submitting...";
+      try {
+        const res = await fetch(`${base}/ingest`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+        const json = await res.json();
+        out.textContent = JSON.stringify(json, null, 2);
+        health();
+      } catch (e) {
+        out.textContent = `Error: ${e}`;
+      }
+    }
+
+    async function ingestUrl() {
+      const url = document.getElementById("ingest-url").value.trim();
+      const metadata = parseMetadata(document.getElementById("ingest-url-metadata").value);
+      const out = document.getElementById("ingest-url-result");
+      if (!url) {
+        out.textContent = "Enter a URL.";
+        return;
+      }
+      out.textContent = "Fetching...";
+      try {
+        const res = await fetch(`${base}/ingest`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ source_type: "url", url, metadata }) });
+        const text = await res.text();
+        if (!res.ok) {
+          out.textContent = `Error ${res.status}: ${text}`;
+          return;
+        }
+        const json = JSON.parse(text);
+        out.textContent = JSON.stringify(json, null, 2);
+        health();
+      } catch (e) {
+        out.textContent = `Error: ${e}`;
+      }
+    }
+
+    async function chat() {
+      const query = document.getElementById("chat-query").value;
+      const ab_profile = document.getElementById("chat-profile").value || null;
+      const body = { query, ab_profile };
+      const answerEl = document.getElementById("chat-answer");
+      const metricsEl = document.getElementById("chat-metrics");
+      const citsEl = document.getElementById("chat-citations");
+      answerEl.textContent = "Calling...";
+      metricsEl.textContent = "";
+      citsEl.textContent = "";
+      try {
+        const res = await fetch(`${base}/chat`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+        const text = await res.text();
+        if (!res.ok) {
+          answerEl.textContent = "";
+          metricsEl.textContent = `Error ${res.status}: ${text}`;
+          citsEl.textContent = "";
+          return;
+        }
+        const json = JSON.parse(text);
+        answerEl.textContent = json.answer || "(no answer)";
+        const cits = (json.citations || []).map(c => `- [${c.chunk_id}] ${c.text.slice(0, 120)}...`).join("\n");
+        metricsEl.textContent = [
+          `Profile: ${json.profile}`,
+          `Latency: ${Math.round(json.latency_ms)} ms`,
+          `Cost: $${json.cost_usd}`,
+          `Hallucination flag: ${json.hallucination_flag}`
+        ].join("\n");
+        citsEl.textContent = cits || "(none)";
+      } catch (e) {
+        answerEl.textContent = "";
+        metricsEl.textContent = `Error: ${e}`;
+        citsEl.textContent = "";
+      }
+    }
+
+    async function agent() {
+      const query = document.getElementById("agent-query").value;
+      const toolsRaw = document.getElementById("agent-tools").value;
+      const allowed_tools = toolsRaw ? toolsRaw.split(",").map(t => t.trim()).filter(Boolean) : null;
+      const freeSite = document.getElementById("free-sites").value;
+      const finalQuery = freeSite ? `${query}\n\n(Consider: ${freeSite})` : query;
+      const ab_profile = document.getElementById("agent-profile").value || null;
+      const body = { query: finalQuery, ab_profile, allowed_tools };
+      const answerEl = document.getElementById("agent-answer");
+      const metricsEl = document.getElementById("agent-metrics");
+      const toolsEl = document.getElementById("agent-tools");
+      const citsEl = document.getElementById("agent-citations");
+      answerEl.textContent = "Calling...";
+      metricsEl.textContent = "";
+      toolsEl.textContent = "";
+      citsEl.textContent = "";
+      try {
+        const res = await fetch(`${base}/agent`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+        const text = await res.text();
+        if (!res.ok) {
+          answerEl.textContent = "";
+          metricsEl.textContent = `Error ${res.status}: ${text}`;
+          toolsEl.textContent = "";
+          citsEl.textContent = "";
+          return;
+        }
+        const json = JSON.parse(text);
+        answerEl.textContent = json.answer || "(no answer)";
+        const tools = (json.tool_calls || []).map(t => `- ${t.name}(${JSON.stringify(t.args)}) → ${JSON.stringify(t.output)}`).join("\n");
+        const cits = (json.citations || []).map(c => `- [${c.chunk_id}] ${c.text.slice(0, 120)}...`).join("\n");
+        metricsEl.textContent = [
+          `Profile: ${json.profile}`,
+          `Latency: ${Math.round(json.latency_ms)} ms`,
+          `Cost: $${json.cost_usd}`,
+          `Hallucination flag: ${json.hallucination_flag}`
+        ].join("\n");
+        toolsEl.textContent = tools || "(none)";
+        citsEl.textContent = cits || "(none)";
+      } catch (e) {
+        answerEl.textContent = "";
+        metricsEl.textContent = `Error: ${e}`;
+        toolsEl.textContent = "";
+        citsEl.textContent = "";
+      }
+    }
+
+    async function uploadDoc() {
+      const fileInput = document.getElementById("upload-file");
+      const metadata = parseMetadata(document.getElementById("upload-metadata").value);
+      const out = document.getElementById("upload-result");
+      if (!fileInput.files || !fileInput.files[0]) {
+        out.textContent = "Choose a file first.";
+        return;
+      }
+      const file = fileInput.files[0];
+      const name = (file.name || "").toLowerCase();
+      const sourceType = name.endsWith(".pdf") ? "pdf" : "text";
+      out.textContent = "Reading file...";
+      if (sourceType === "pdf") {
+        const reader = new FileReader();
+        reader.onload = async () => {
+          const base64 = reader.result.split(",")[1];
+          await ingestPayload({ source_type: "pdf", content: base64, metadata }, out);
+        };
+        reader.readAsDataURL(file);
+      } else {
+        const reader = new FileReader();
+        reader.onload = async () => {
+          const text = reader.result;
+          await ingestPayload({ source_type: "text", content: text, metadata }, out);
+        };
+        reader.readAsText(file);
+      }
+    }
+
+    async function ingestPayload(body, outEl) {
+      outEl.textContent = "Submitting...";
+      try {
+        const res = await fetch(`${base}/ingest`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+        const json = await res.json();
+        outEl.textContent = JSON.stringify(json, null, 2);
+        health();
+      } catch (e) {
+        outEl.textContent = `Error: ${e}`;
+      }
+    }
+
+    function formatChat(json) {
+      const cits = (json.citations || []).map(c => `- [${c.chunk_id}] ${c.text.slice(0, 120)}...`).join("\n");
+      return [
+        `Answer:\n${json.answer || ""}`,
+        `Profile: ${json.profile}  | latency: ${Math.round(json.latency_ms)} ms  | cost: $${json.cost_usd}`,
+        `Hallucination flag: ${json.hallucination_flag}`,
+        `Citations:\n${cits || "(none)"}`
+      ].join("\n\n");
+    }
+
+    function formatAgent(json) {
+      const tools = (json.tool_calls || []).map(t => `- ${t.name}(${JSON.stringify(t.args)}) → ${JSON.stringify(t.output)}`).join("\n");
+      const cits = (json.citations || []).map(c => `- [${c.chunk_id}] ${c.text.slice(0, 120)}...`).join("\n");
+      return [
+        `Answer:\n${json.answer || ""}`,
+        `Profile: ${json.profile}  | latency: ${Math.round(json.latency_ms)} ms  | cost: $${json.cost_usd}`,
+        `Hallucination flag: ${json.hallucination_flag}`,
+        `Tool calls:\n${tools || "(none)"}`,
+        `Citations:\n${cits || "(none)"}`
+      ].join("\n\n");
+    }
+
+    health();
+  </script>
+</body>
+</html>

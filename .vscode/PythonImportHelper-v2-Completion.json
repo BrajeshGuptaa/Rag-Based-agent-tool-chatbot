@@ -1,0 +1,974 @@
+[
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "httpx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "httpx",
+        "description": "httpx",
+        "detail": "httpx",
+        "documentation": {}
+    },
+    {
+        "label": "PdfReader",
+        "importPath": "pypdf",
+        "description": "pypdf",
+        "isExtraImport": true,
+        "detail": "pypdf",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "AzureOpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "FileResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "StaticFiles",
+        "importPath": "fastapi.staticfiles",
+        "description": "fastapi.staticfiles",
+        "isExtraImport": true,
+        "detail": "fastapi.staticfiles",
+        "documentation": {}
+    },
+    {
+        "label": "BM25Okapi",
+        "importPath": "rank_bm25",
+        "description": "rank_bm25",
+        "isExtraImport": true,
+        "detail": "rank_bm25",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "numexpr",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numexpr",
+        "description": "numexpr",
+        "detail": "numexpr",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "DDGS",
+        "importPath": "duckduckgo_search",
+        "description": "duckduckgo_search",
+        "isExtraImport": true,
+        "detail": "duckduckgo_search",
+        "documentation": {}
+    },
+    {
+        "label": "ZoneInfo",
+        "importPath": "zoneinfo",
+        "description": "zoneinfo",
+        "isExtraImport": true,
+        "detail": "zoneinfo",
+        "documentation": {}
+    },
+    {
+        "label": "robotparser",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "ABRouter",
+        "kind": 6,
+        "importPath": "app.ab_testing",
+        "description": "app.ab_testing",
+        "peekOfCode": "class ABRouter:\n    def __init__(self, default_profile: str = \"control\") -> None:\n        self.settings = get_settings()\n        self.default_profile = default_profile\n    def choose(self, requested_profile: Optional[str], sticky_key: Optional[str] = None) -> str:\n        if requested_profile and requested_profile in self.settings.ab_profiles:\n            return requested_profile\n        key = sticky_key or str(time.time())\n        bucket = int(hashlib.md5(key.encode()).hexdigest(), 16) % 100\n        if bucket < 10 and \"quality\" in self.settings.ab_profiles:",
+        "detail": "app.ab_testing",
+        "documentation": {}
+    },
+    {
+        "label": "AgentOrchestrator",
+        "kind": 6,
+        "importPath": "app.agent",
+        "description": "app.agent",
+        "peekOfCode": "class AgentOrchestrator:\n    def __init__(self, storage: Storage, retriever: HybridRetriever) -> None:\n        self.storage = storage\n        self.retriever = retriever\n    def _build_context(self, chunks_with_scores) -> str:\n        parts = []\n        for chunk, score, bm25_score, dense_score in chunks_with_scores:\n            parts.append(\n                f\"[{chunk.id}] {chunk.text}\\nsource: {chunk.source} | scores -> bm25:{bm25_score:.2f} dense:{dense_score:.2f} blended:{score:.2f}\"\n            )",
+        "detail": "app.agent",
+        "documentation": {}
+    },
+    {
+        "label": "ABProfile",
+        "kind": 6,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "class ABProfile(BaseModel):\n    chat_model: str\n    embed_model: str\n    bm25_weight: float = 0.4\n    embedding_weight: float = 0.6\n    top_k: int = 6\nclass Settings(BaseModel):\n    # GitHub Models (default path)\n    use_github_models: bool = os.getenv(\"USE_GITHUB_MODELS\", \"true\").lower() == \"true\"\n    github_token: str = os.getenv(\"GITHUB_TOKEN\", \"\")",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "class Settings(BaseModel):\n    # GitHub Models (default path)\n    use_github_models: bool = os.getenv(\"USE_GITHUB_MODELS\", \"true\").lower() == \"true\"\n    github_token: str = os.getenv(\"GITHUB_TOKEN\", \"\")\n    github_models_base_url: str = os.getenv(\"GITHUB_MODELS_BASE_URL\", \"https://models.github.ai/inference\")\n    github_chat_model: str = os.getenv(\"GITHUB_CHAT_MODEL\", \"openai/gpt-4.1\")\n    github_embed_model: str = os.getenv(\"GITHUB_EMBED_MODEL\", \"text-embedding-3-large\")\n    # OpenAI (direct)\n    openai_api_key: str = os.getenv(\"OPENAI_API_KEY\", \"\")\n    embed_model: str = os.getenv(\"EMBED_MODEL\", \"text-embedding-3-small\")",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "def get_settings() -> Settings:\n    return Settings()",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "chunk_text",
+        "kind": 2,
+        "importPath": "app.ingestion",
+        "description": "app.ingestion",
+        "peekOfCode": "def chunk_text(text: str, chunk_size: int, overlap: int) -> List[str]:\n    normalized = normalize_text(text)\n    chunks: List[str] = []\n    start = 0\n    while start < len(normalized):\n        end = min(len(normalized), start + chunk_size)\n        chunks.append(normalized[start:end])\n        if end == len(normalized):\n            break\n        start = end - overlap",
+        "detail": "app.ingestion",
+        "documentation": {}
+    },
+    {
+        "label": "extract_pdf_text",
+        "kind": 2,
+        "importPath": "app.ingestion",
+        "description": "app.ingestion",
+        "peekOfCode": "def extract_pdf_text(binary: bytes) -> str:\n    reader = PdfReader(io.BytesIO(binary))\n    pages = [page.extract_text() or \"\" for page in reader.pages]\n    return \"\\n\".join(pages)\ndef ingest(request: IngestRequest, storage: Storage) -> Tuple[str, int]:\n    settings = get_settings()\n    document_id = request.document_id or str(uuid.uuid4())\n    if request.source_type == \"text\":\n        raw_text = request.content or \"\"\n        source = \"text\"",
+        "detail": "app.ingestion",
+        "documentation": {}
+    },
+    {
+        "label": "ingest",
+        "kind": 2,
+        "importPath": "app.ingestion",
+        "description": "app.ingestion",
+        "peekOfCode": "def ingest(request: IngestRequest, storage: Storage) -> Tuple[str, int]:\n    settings = get_settings()\n    document_id = request.document_id or str(uuid.uuid4())\n    if request.source_type == \"text\":\n        raw_text = request.content or \"\"\n        source = \"text\"\n    elif request.source_type == \"url\":\n        resp = httpx.get(request.url, timeout=10.0)\n        resp.raise_for_status()\n        raw_text = resp.text",
+        "detail": "app.ingestion",
+        "documentation": {}
+    },
+    {
+        "label": "embed_texts",
+        "kind": 2,
+        "importPath": "app.llm",
+        "description": "app.llm",
+        "peekOfCode": "def embed_texts(texts: List[str], model: Optional[str] = None) -> List[np.ndarray]:\n    settings = get_settings()\n    embed_model = model\n    if not embed_model:\n        if settings.use_github_models:\n            embed_model = settings.github_embed_model\n        elif settings.use_azure_openai and settings.azure_embed_deployment:\n            embed_model = settings.azure_embed_deployment\n        else:\n            embed_model = settings.embed_model",
+        "detail": "app.llm",
+        "documentation": {}
+    },
+    {
+        "label": "chat_completion",
+        "kind": 2,
+        "importPath": "app.llm",
+        "description": "app.llm",
+        "peekOfCode": "def chat_completion(\n    messages: Sequence[Dict[str, Any]],\n    model: Optional[str] = None,\n    temperature: Optional[float] = None,\n    tools: Optional[List[Dict[str, Any]]] = None,\n    tool_choice: Optional[str] = None,\n):\n    settings = get_settings()\n    payload: Dict[str, Any] = {\n        \"model\": (",
+        "detail": "app.llm",
+        "documentation": {}
+    },
+    {
+        "label": "estimate_cost_usd",
+        "kind": 2,
+        "importPath": "app.llm",
+        "description": "app.llm",
+        "peekOfCode": "def estimate_cost_usd(prompt_tokens: int, completion_tokens: int, model: str) -> float:\n    settings = get_settings()\n    pricing = settings.pricing.get(model)\n    if not pricing:\n        return 0.0\n    prompt_cost = (prompt_tokens or 0) / 1_000_000 * pricing[\"prompt\"]\n    completion_cost = (completion_tokens or 0) / 1_000_000 * pricing[\"completion\"]\n    return round(prompt_cost + completion_cost, 6)",
+        "detail": "app.llm",
+        "documentation": {}
+    },
+    {
+        "label": "health",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def health():\n    return {\n        \"status\": \"ok\",\n        \"documents\": len(storage.list_documents()),\n        \"data_dir\": settings.data_dir,\n    }\n@app.post(\"/ingest\")\ndef ingest_endpoint(payload: IngestRequest):\n    try:\n        doc_id, chunk_count = ingest(payload, storage)",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "ingest_endpoint",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def ingest_endpoint(payload: IngestRequest):\n    try:\n        doc_id, chunk_count = ingest(payload, storage)\n        retriever.refresh()\n        return {\"document_id\": doc_id, \"chunks\": chunk_count}\n    except Exception as exc:  # pragma: no cover - runtime guard\n        raise HTTPException(status_code=400, detail=str(exc))\n@app.post(\"/chat\", response_model=ChatResponse)\ndef chat(payload: ChatRequest):\n    profile = ab_router.choose(payload.ab_profile)",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "chat",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def chat(payload: ChatRequest):\n    profile = ab_router.choose(payload.ab_profile)\n    try:\n        return rag_pipeline.run(payload, profile_name=profile)\n    except Exception as exc:  # pragma: no cover - runtime guard\n        raise HTTPException(status_code=500, detail=str(exc))\n@app.post(\"/agent\", response_model=AgentResponse)\ndef agent(payload: AgentRequest):\n    profile = ab_router.choose(payload.ab_profile)\n    try:",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "agent",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def agent(payload: AgentRequest):\n    profile = ab_router.choose(payload.ab_profile)\n    try:\n        return agent_orchestrator.run(payload, profile_name=profile)\n    except Exception as exc:  # pragma: no cover - runtime guard\n        raise HTTPException(status_code=500, detail=str(exc))\n@app.get(\"/documents\")\ndef documents():\n    return storage.list_documents()\n@app.get(\"/\")",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "documents",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def documents():\n    return storage.list_documents()\n@app.get(\"/\")\ndef root():\n    index_path = static_dir / \"index.html\"\n    if index_path.exists():\n        return FileResponse(index_path)\n    return {\"message\": \"UI not found. Ensure static/index.html exists.\"}",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def root():\n    index_path = static_dir / \"index.html\"\n    if index_path.exists():\n        return FileResponse(index_path)\n    return {\"message\": \"UI not found. Ensure static/index.html exists.\"}",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI(title=\"RAG + Agent Platform\", version=\"0.1.0\")\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\nsettings = get_settings()\nstorage = Storage()",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "settings = get_settings()\nstorage = Storage()\nretriever = HybridRetriever(storage)\nrag_pipeline = RAGPipeline(storage, retriever)\nagent_orchestrator = AgentOrchestrator(storage, retriever)\nab_router = ABRouter()\nstatic_dir = Path(__file__).resolve().parent.parent / \"static\"\nif static_dir.exists():\n    app.mount(\"/static\", StaticFiles(directory=str(static_dir)), name=\"static\")\n@app.get(\"/health\")",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "storage = Storage()\nretriever = HybridRetriever(storage)\nrag_pipeline = RAGPipeline(storage, retriever)\nagent_orchestrator = AgentOrchestrator(storage, retriever)\nab_router = ABRouter()\nstatic_dir = Path(__file__).resolve().parent.parent / \"static\"\nif static_dir.exists():\n    app.mount(\"/static\", StaticFiles(directory=str(static_dir)), name=\"static\")\n@app.get(\"/health\")\ndef health():",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "retriever",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "retriever = HybridRetriever(storage)\nrag_pipeline = RAGPipeline(storage, retriever)\nagent_orchestrator = AgentOrchestrator(storage, retriever)\nab_router = ABRouter()\nstatic_dir = Path(__file__).resolve().parent.parent / \"static\"\nif static_dir.exists():\n    app.mount(\"/static\", StaticFiles(directory=str(static_dir)), name=\"static\")\n@app.get(\"/health\")\ndef health():\n    return {",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "rag_pipeline",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "rag_pipeline = RAGPipeline(storage, retriever)\nagent_orchestrator = AgentOrchestrator(storage, retriever)\nab_router = ABRouter()\nstatic_dir = Path(__file__).resolve().parent.parent / \"static\"\nif static_dir.exists():\n    app.mount(\"/static\", StaticFiles(directory=str(static_dir)), name=\"static\")\n@app.get(\"/health\")\ndef health():\n    return {\n        \"status\": \"ok\",",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "agent_orchestrator",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "agent_orchestrator = AgentOrchestrator(storage, retriever)\nab_router = ABRouter()\nstatic_dir = Path(__file__).resolve().parent.parent / \"static\"\nif static_dir.exists():\n    app.mount(\"/static\", StaticFiles(directory=str(static_dir)), name=\"static\")\n@app.get(\"/health\")\ndef health():\n    return {\n        \"status\": \"ok\",\n        \"documents\": len(storage.list_documents()),",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "ab_router",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "ab_router = ABRouter()\nstatic_dir = Path(__file__).resolve().parent.parent / \"static\"\nif static_dir.exists():\n    app.mount(\"/static\", StaticFiles(directory=str(static_dir)), name=\"static\")\n@app.get(\"/health\")\ndef health():\n    return {\n        \"status\": \"ok\",\n        \"documents\": len(storage.list_documents()),\n        \"data_dir\": settings.data_dir,",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "static_dir",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "static_dir = Path(__file__).resolve().parent.parent / \"static\"\nif static_dir.exists():\n    app.mount(\"/static\", StaticFiles(directory=str(static_dir)), name=\"static\")\n@app.get(\"/health\")\ndef health():\n    return {\n        \"status\": \"ok\",\n        \"documents\": len(storage.list_documents()),\n        \"data_dir\": settings.data_dir,\n    }",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "log_event",
+        "kind": 2,
+        "importPath": "app.observability",
+        "description": "app.observability",
+        "peekOfCode": "def log_event(event_type: str, payload: Dict[str, Any]) -> Dict[str, Any]:\n    settings = get_settings()\n    os.makedirs(settings.log_dir, exist_ok=True)\n    entry = {\n        \"id\": str(uuid.uuid4()),\n        \"type\": event_type,\n        \"ts\": time.time(),\n        **payload,\n    }\n    logfile = os.path.join(settings.log_dir, f\"{event_type}.log\")",
+        "detail": "app.observability",
+        "documentation": {}
+    },
+    {
+        "label": "RAGPipeline",
+        "kind": 6,
+        "importPath": "app.rag",
+        "description": "app.rag",
+        "peekOfCode": "class RAGPipeline:\n    def __init__(self, storage: Storage, retriever: HybridRetriever) -> None:\n        self.storage = storage\n        self.retriever = retriever\n    def _build_context(self, chunks_with_scores) -> str:\n        parts: List[str] = []\n        for chunk, score, bm25_score, dense_score in chunks_with_scores:\n            parts.append(\n                f\"[{chunk.id}] {chunk.text}\\nsource: {chunk.source} | scores -> bm25:{bm25_score:.2f} dense:{dense_score:.2f} blended:{score:.2f}\"\n            )",
+        "detail": "app.rag",
+        "documentation": {}
+    },
+    {
+        "label": "HybridRetriever",
+        "kind": 6,
+        "importPath": "app.retrieval",
+        "description": "app.retrieval",
+        "peekOfCode": "class HybridRetriever:\n    def __init__(self, storage: Storage) -> None:\n        self.storage = storage\n        self.chunks: List[Chunk] = []\n        self.emb_matrix: np.ndarray | None = None\n        self.bm25: BM25Okapi | None = None\n        self.refresh()\n    def refresh(self) -> None:\n        self.chunks = self.storage.load_chunks()\n        token_lists = [chunk.tokens for chunk in self.chunks]",
+        "detail": "app.retrieval",
+        "documentation": {}
+    },
+    {
+        "label": "IngestRequest",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class IngestRequest(BaseModel):\n    source_type: Literal[\"text\", \"pdf\", \"url\", \"api\"]\n    content: Optional[str] = None\n    url: Optional[str] = None\n    metadata: Dict[str, Any] = Field(default_factory=dict)\n    document_id: Optional[str] = None\nclass ChunkMetadata(BaseModel):\n    document_id: str\n    chunk_index: int\n    source: str",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ChunkMetadata",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class ChunkMetadata(BaseModel):\n    document_id: str\n    chunk_index: int\n    source: str\n    metadata: Dict[str, Any] = Field(default_factory=dict)\nclass Citation(BaseModel):\n    chunk_id: str\n    document_id: str\n    score: float\n    text: str",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Citation",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class Citation(BaseModel):\n    chunk_id: str\n    document_id: str\n    score: float\n    text: str\n    source: str\n    metadata: Dict[str, Any] = Field(default_factory=dict)\nclass ChatRequest(BaseModel):\n    query: str\n    ab_profile: Optional[str] = None",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRequest",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class ChatRequest(BaseModel):\n    query: str\n    ab_profile: Optional[str] = None\n    top_k: Optional[int] = None\n    rerank_weight: Optional[float] = None\n    history: List[Dict[str, str]] = Field(default_factory=list)\nclass ChatResponse(BaseModel):\n    answer: str\n    citations: List[Citation] = Field(default_factory=list)\n    latency_ms: float",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ChatResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class ChatResponse(BaseModel):\n    answer: str\n    citations: List[Citation] = Field(default_factory=list)\n    latency_ms: float\n    cost_usd: float\n    hallucination_flag: bool = False\n    profile: str\nclass AgentRequest(BaseModel):\n    query: str\n    ab_profile: Optional[str] = None",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "AgentRequest",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class AgentRequest(BaseModel):\n    query: str\n    ab_profile: Optional[str] = None\n    allowed_tools: Optional[List[str]] = None\n    history: List[Dict[str, str]] = Field(default_factory=list)\nclass ToolExecution(BaseModel):\n    name: str\n    args: Dict[str, Any]\n    output: Any\n    latency_ms: float",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ToolExecution",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class ToolExecution(BaseModel):\n    name: str\n    args: Dict[str, Any]\n    output: Any\n    latency_ms: float\nclass AgentResponse(BaseModel):\n    answer: str\n    tool_calls: List[ToolExecution] = Field(default_factory=list)\n    citations: List[Citation] = Field(default_factory=list)\n    latency_ms: float",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "AgentResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class AgentResponse(BaseModel):\n    answer: str\n    tool_calls: List[ToolExecution] = Field(default_factory=list)\n    citations: List[Citation] = Field(default_factory=list)\n    latency_ms: float\n    cost_usd: float\n    profile: str\n    hallucination_flag: bool = False",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Chunk",
+        "kind": 6,
+        "importPath": "app.storage",
+        "description": "app.storage",
+        "peekOfCode": "class Chunk:\n    id: str\n    document_id: str\n    chunk_index: int\n    text: str\n    source: str\n    metadata: Dict\n    tokens: List[str]\n    embedding: np.ndarray\n    created_at: float = 0.0",
+        "detail": "app.storage",
+        "documentation": {}
+    },
+    {
+        "label": "Storage",
+        "kind": 6,
+        "importPath": "app.storage",
+        "description": "app.storage",
+        "peekOfCode": "class Storage:\n    def __init__(self) -> None:\n        settings = get_settings()\n        os.makedirs(settings.data_dir, exist_ok=True)\n        self.db_path = os.path.join(settings.data_dir, \"index.db\")\n        self.conn = sqlite3.connect(self.db_path, check_same_thread=False)\n        self._init_tables()\n    def _init_tables(self) -> None:\n        cur = self.conn.cursor()\n        cur.execute(",
+        "detail": "app.storage",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_text",
+        "kind": 2,
+        "importPath": "app.text_utils",
+        "description": "app.text_utils",
+        "peekOfCode": "def normalize_text(text: str) -> str:\n    return re.sub(r\"\\s+\", \" \", text).strip()\ndef tokenize(text: str) -> List[str]:\n    return [t.lower() for t in re.findall(r\"\\b\\w+\\b\", text)]",
+        "detail": "app.text_utils",
+        "documentation": {}
+    },
+    {
+        "label": "tokenize",
+        "kind": 2,
+        "importPath": "app.text_utils",
+        "description": "app.text_utils",
+        "peekOfCode": "def tokenize(text: str) -> List[str]:\n    return [t.lower() for t in re.findall(r\"\\b\\w+\\b\", text)]",
+        "detail": "app.text_utils",
+        "documentation": {}
+    },
+    {
+        "label": "Tool",
+        "kind": 6,
+        "importPath": "app.tools",
+        "description": "app.tools",
+        "peekOfCode": "class Tool:\n    name: str\n    description: str\n    parameters: Dict[str, Any]\n    handler: Callable[[Dict[str, Any]], Any]\n# Simple token bucket per domain to throttle fetch_url.\n_RATE_LIMIT_BUCKETS: Dict[str, Dict[str, float]] = {}\n_STORAGE = Storage()\n_RETRIEVER = HybridRetriever(_STORAGE)\ndef _rate_limit(domain: str, tool: str) -> None:",
+        "detail": "app.tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_tool_schemas",
+        "kind": 2,
+        "importPath": "app.tools",
+        "description": "app.tools",
+        "peekOfCode": "def get_tool_schemas(selected: Optional[List[str]] = None) -> List[Dict[str, Any]]:\n    tools = AVAILABLE_TOOLS\n    if selected:\n        tools = {k: v for k, v in AVAILABLE_TOOLS.items() if k in selected}\n    schemas = []\n    for tool in tools.values():\n        schemas.append(\n            {\n                \"type\": \"function\",\n                \"function\": {",
+        "detail": "app.tools",
+        "documentation": {}
+    },
+    {
+        "label": "execute_tool_call",
+        "kind": 2,
+        "importPath": "app.tools",
+        "description": "app.tools",
+        "peekOfCode": "def execute_tool_call(name: str, args: Dict[str, Any]) -> Any:\n    tool = AVAILABLE_TOOLS.get(name)\n    if not tool:\n        raise ValueError(f\"Unknown tool {name}\")\n    return tool.handler(args)",
+        "detail": "app.tools",
+        "documentation": {}
+    },
+    {
+        "label": "_STORAGE",
+        "kind": 5,
+        "importPath": "app.tools",
+        "description": "app.tools",
+        "peekOfCode": "_STORAGE = Storage()\n_RETRIEVER = HybridRetriever(_STORAGE)\ndef _rate_limit(domain: str, tool: str) -> None:\n    settings = get_settings()\n    limits = settings.per_domain_rate_limits.get(\n        domain, {\"requests_per_minute\": settings.rate_limit_requests_per_minute, \"burst\": settings.rate_limit_burst}\n    )\n    rate = limits[\"requests_per_minute\"] / 60.0\n    burst = limits[\"burst\"]\n    bucket = _RATE_LIMIT_BUCKETS.setdefault(domain, {\"tokens\": float(burst), \"last\": time.time()})",
+        "detail": "app.tools",
+        "documentation": {}
+    },
+    {
+        "label": "_RETRIEVER",
+        "kind": 5,
+        "importPath": "app.tools",
+        "description": "app.tools",
+        "peekOfCode": "_RETRIEVER = HybridRetriever(_STORAGE)\ndef _rate_limit(domain: str, tool: str) -> None:\n    settings = get_settings()\n    limits = settings.per_domain_rate_limits.get(\n        domain, {\"requests_per_minute\": settings.rate_limit_requests_per_minute, \"burst\": settings.rate_limit_burst}\n    )\n    rate = limits[\"requests_per_minute\"] / 60.0\n    burst = limits[\"burst\"]\n    bucket = _RATE_LIMIT_BUCKETS.setdefault(domain, {\"tokens\": float(burst), \"last\": time.time()})\n    now = time.time()",
+        "detail": "app.tools",
+        "documentation": {}
+    }
+]

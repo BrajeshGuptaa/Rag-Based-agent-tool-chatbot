@@ -1,0 +1,1 @@
+Built a hybrid BM25 + OpenAI-embedding RAG system over a SQLite-backed index with multi-source ingestion and tool-calling agents (web search, calculator, DB). Added latency/cost logging, hallucination flags, and A/B routing to deliver grounded, citation-based responses.
