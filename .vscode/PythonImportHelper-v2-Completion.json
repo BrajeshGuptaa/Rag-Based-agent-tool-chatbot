@@ -1,5 +1,14 @@
 [
     {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
         "label": "hashlib",
         "kind": 6,
         "isExtraImport": true,
@@ -564,6 +573,33 @@
         "description": "urllib",
         "isExtraImport": true,
         "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "mapping",
+        "kind": 5,
+        "importPath": ".git.rewrite_msg",
+        "description": ".git.rewrite_msg",
+        "peekOfCode": "mapping = {\n    'e12121d885c9890bec06e63261b7aff74657e999': 'Set up repo and checked in all the current project files',\n    '21f4445e9a8a34f384aa5ea7625d267e529430b8': 'Jotted a starter README to explain what this thing does',\n    'daa9603815c8b51bb56e2bb28c2af2ffe16ac192': 'Pinned the requirements so we know exactly what we install',\n    '1489c7ad85c233dd8aefecb81b1dec76280daa44': \"Dropped placeholder data folder and index so scripts don't choke\",\n    'd1584ea5516efe72691936d1c52a87744c65b0ff': 'Added initial static assets so the UI has something to load',\n    'd2f151611349bae863d38127afe3b9a16f661110': 'Wired up the base app structure and module layout',\n    '90ae5a4bc910003b261ae4920003bed3d68d2cb7': 'Added basic logging setup to keep an eye on runs',\n    '87186a0997366622a8b5103148f2a75eeb6cf7f4': 'Tweaked retrieval settings after a quick sanity test',\n    '747eadb9c527b066e0475409558c3bdffe30017d': 'Sketched out prompt templates we can iterate on',",
+        "detail": ".git.rewrite_msg",
+        "documentation": {}
+    },
+    {
+        "label": "sha",
+        "kind": 5,
+        "importPath": ".git.rewrite_msg",
+        "description": ".git.rewrite_msg",
+        "peekOfCode": "sha = os.environ.get(\"GIT_COMMIT\")\nmsg = mapping.get(sha)\nif msg is None:\n    sys.stdout.write(sys.stdin.read())\nelse:\n    sys.stdout.write(msg + \"\\n\")",
+        "detail": ".git.rewrite_msg",
+        "documentation": {}
+    },
+    {
+        "label": "msg",
+        "kind": 5,
+        "importPath": ".git.rewrite_msg",
+        "description": ".git.rewrite_msg",
+        "peekOfCode": "msg = mapping.get(sha)\nif msg is None:\n    sys.stdout.write(sys.stdin.read())\nelse:\n    sys.stdout.write(msg + \"\\n\")",
+        "detail": ".git.rewrite_msg",
         "documentation": {}
     },
     {

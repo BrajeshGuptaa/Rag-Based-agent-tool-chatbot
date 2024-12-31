@@ -1,0 +1,50 @@
+15acece | 2024-12-30 | Final sweep before handing this off
+fd700ed | 2024-12-26 | Polished the README one more time
+dabc3e6 | 2024-12-24 | Expanded deployment notes for clarity
+268d8dd | 2024-12-23 | Cleaned up old test stubs
+458216f | 2024-12-22 | Drafted release notes for this iteration
+d1a7ab4 | 2024-12-15 | Tidied the data folder layout
+2d4bf3e | 2024-12-15 | Started a TODO backlog to track follow-ups
+43937d4 | 2024-12-14 | Improved onboarding text after feedback
+75c46eb | 2024-12-11 | Added usage examples to the docs
+ab195b6 | 2024-12-05 | Bumped dependency versions to current
+a135cbd | 2024-11-29 | Wrote down the CLI commands we're using
+3e2b775 | 2024-11-26 | Adjusted context window defaults slightly
+b88f71f | 2024-11-21 | Added an evaluation checklist before shipping
+f4c4b1c | 2024-11-19 | Touched up response formatting again
+36b8eb0 | 2024-11-17 | Listed knowledge sources we rely on
+235b24a | 2024-11-17 | Simplified the agent prompt so it stays focused
+9acbf0e | 2024-11-17 | Trimmed token budget in the long prompts
+d72e716 | 2024-11-16 | Left caching hints to keep latency down
+cf7ecc1 | 2024-11-15 | Captured API surface notes for the agents
+4f2d059 | 2024-11-14 | Nudged ranking weights to favor fresher content
+c89ad19 | 2024-11-12 | Drew pipeline diagrams for onboarding
+d1bfff8 | 2024-11-12 | Reworded README sections to be clearer
+27bc365 | 2024-11-10 | Jotted monitoring notes while looking at runs
+ace74ab | 2024-11-09 | Hardened error handling for edge cases
+f4a8b29 | 2024-11-09 | Updated data schemas with the latest fields
+473217e | 2024-11-06 | Removed some stray console logging noise
+8071696 | 2024-11-03 | Added helper utilities for reuse across modules
+a505d9c | 2024-11-01 | Tweaked fallback logic to avoid empty replies
+a46d067 | 2024-10-27 | Wrote a bit of UI copy so the page isn't blank
+d3b9d7b | 2024-10-27 | Adjusted index config after reviewing logs
+304d1e0 | 2024-10-27 | Added a tiny ingestion script for local data drops
+3f51ca5 | 2024-10-16 | Improved doc parsing to handle oddball inputs
+4519cec | 2024-10-15 | Stubbed connectors we can flesh out later
+7fedbe7 | 2024-10-14 | Dialed embedding settings based on token counts
+09e8292 | 2024-10-13 | Refined chunking logic to reduce noisy splits
+a59f87c | 2024-10-13 | Captured a few quick dataset stats for reference
+7acabf6 | 2024-10-10 | Polished response formatting to read less robotic
+249fce9 | 2024-10-09 | Committed a default config for easier local runs
+25b3a30 | 2024-10-09 | Updated README with a couple more usage notes
+d3d257f | 2024-10-01 | Left some evaluation notes while testing responses
+e2bb47f | 2024-09-30 | Hooked up the RAG pipeline pieces end to end
+e67e04c | 2024-09-29 | Sketched out prompt templates we can iterate on
+89eda5a | 2024-09-28 | Tweaked retrieval settings after a quick sanity test
+edae176 | 2024-09-23 | Added basic logging setup to keep an eye on runs
+311c7b9 | 2024-09-17 | Wired up the base app structure and module layout
+76e97ce | 2024-09-16 | Added initial static assets so the UI has something to load
+0119a2c | 2024-09-16 | Dropped placeholder data folder and index so scripts don't choke
+5788219 | 2024-09-10 | Pinned the requirements so we know exactly what we install
+1003f37 | 2024-09-03 | Jotted a starter README to explain what this thing does
+a4eb54a | 2024-09-01 | Set up repo and checked in all the current project files
